@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TADA MECHANICAL</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        
+
+        .product-info {
+            width: 70%;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        .product-details {
+            margin-bottom: 20px;
+        }
+
+        .product-details ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .product-details li {
+            margin-bottom: 10px;
+        }
+
+        .btnSP {
+            display: block;
+            width: 100%;
+            padding: 10px 20px;
+            background
+        }
+
+        .SP {
+            display: flex;
+            max-width: 1200px;
+            height: 600px;
+            margin: 60px auto;
+            background-color: #fff;
+            border: 3px solid #fb742d;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .image-slider {
+            width: 50%;
+            overflow-x: auto;
+            white-space: nowrap;
+            padding-top: 25px;
+        }
+
+        .image-slider img {
+            max-width: 100%;
+            height: auto;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .gallery-container {
+            width: 80%;
+            margin: auto;
+        }
+
+        .main-image {
+            width: 100%;
+            display: block;
+            padding-left: 10px;
+        }   
+
+        .thumbnail-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .thumbnail {
+            width: 60px;
+            margin: 0 5px;
+            cursor: pointer;
+            opacity: 0.6;
+        }
+
+        .thumbnail:hover {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="#"><img src="img/logo.png" alt="Logo"></a>
+            </div>
+            <nav>
+                <ul class="headertitle">
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="#">Sản phẩm</a></li>
+                    <li><a href="#">Dịch vụ</a></li>
+                    <li><a href="#">Tin tức</a></li>
+                    <li><a href="aboutus.html">Liên hệ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Banner -->
+    <section class="banner">
+        <div class="container">
+            <h1>Chào mừng đến với cửa hàng của chúng tôi</h1>
+            <p>Chúng tôi cung cấp những sản phẩm chất lượng, đa dạng và uy tín.</p>
+            <a href="#" class="btn btn-primary">Xem sản phẩm</a>
+        </div>
+    </section>
+
+    <div class="SP">
+        <div class="image-slider">
+            <img id="mainImage" class="main-image" src="img/Cua-cuon-dai-loan-8dem.jpg" alt="Hình Chính">
+            <div class="thumbnail-container">
+                <img class="thumbnail" src="img/Cua-cuon-cong-nghe-dai-loan.jpg" alt="Hình 1" onclick="changeImage(this)">
+                <img class="thumbnail" src="img/Cua-cuon-dai-loan-7dem.jpg" alt="Hình 2" onclick="changeImage(this)">
+                <img class="thumbnail" src="img/Cua-cuon-dai-loan.jpg" alt="Hình 2" onclick="changeImage(this)">
+                <img class="thumbnail" src="img/Cua-cuon-dai-loan-8dem.jpg" alt="Hình 2" onclick="changeImage(this)">
+                
+                <!-- Thêm các hình thu nhỏ khác tại đây -->
+            </div>
+        </div>
+
+
+        <div class="product-info">
+            <h1>PC GVN x MSI Dragon X White</h1>
+            <p>Bộ PC chơi game mạnh mẽ với CPU Intel Core i7-14700K và card đồ họa NVIDIA GeForce RTX 4080 Super.</p>
+            <div class="product-details">
+                <ul>
+                    <li>CPU: Intel Core i7-14700K</li>
+                    <li>VGA: NVIDIA GeForce RTX 4080 Super</li>
+                    <li>RAM: 16GB DDR5</li>
+                    <li>Ổ cứng: 1TB SSD NVMe PCIe 4.0</li>
+                    <li>Mainboard: MSI Z790 MEG UNIFY-X</li>
+                    <li>Nguồn: 850W 80 Plus Gold</li>
+                    <li>Case: MSI MAG Forge 710M White</li>
+                    <li>Hệ thống tản nhiệt: MSI MAG CORELIQUID E360 WHITE</li>
+                </ul>
+            </div>
+            
+            <a href="#" class="btn btn-primary">MUA NGAY</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer">
+            <div class="footer-content">
+                <div class="logo">
+                    <a href="#"><img src="img/logo.png" alt="Logo"></a>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Trang chủ</a></li>
+                        <li><a href="#">Sản phẩm</a></li>
+                        <li><a href="#">Dịch vụ</a></li>
+                        <li><a href="#">Tin tức</a></li>
+                        <li><a href="aboutus.html">Liên hệ</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function changeImage(element) {
+          var mainImage = document.getElementById("mainImage");
+          mainImage.src = element.src;
+        }
+        </script>
+</body>
+
+</html>
