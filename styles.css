@@ -10,20 +10,22 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: #f6f6f6;
-    
+
 }
 
 .container {
     width: 80%;
+    height: 20%;
     margin: 0 auto;
 }
-.headertitle{
+
+.headertitle {
     margin: 0 auto;
 }
 
 
 header {
-    background: #fb742d;
+    background: #F8680C;
     color: #f6f6f6;
     padding: 10px 0;
     text-align: center;
@@ -31,8 +33,10 @@ header {
 
 header .container {
     display: flex;
-    justify-content: space-between; /* Aligns items with space in between */
-    align-items: center; /* Centers items vertically */
+    justify-content: space-between;
+    /* Aligns items with space in between */
+    align-items: center;
+    /* Centers items vertically */
 }
 
 header .logo img {
@@ -42,12 +46,15 @@ header .logo img {
 header nav ul {
     list-style: none;
     display: flex;
-    margin: 30px; /* Remove default margin */
-    padding: 0; /* Remove default padding */
+    margin: 30px;
+    /* Remove default margin */
+    padding: 0;
+    /* Remove default padding */
 }
 
 header nav ul li {
-    margin-left: 10px; /* Adjust spacing between navigation items */
+    margin-left: 10px;
+    /* Adjust spacing between navigation items */
 }
 
 header nav ul li a {
@@ -65,14 +72,18 @@ header nav ul li a:hover {
     background-size: cover;
     background-position: center;
     color: gold;
-    background-color: 	#47464d;
+    background-color: #47464d;
     text-align: center;
-    padding: 100px 0;
+    padding: 10px 0;
+    font-size: 1em;
+    height: 100%;
+    /* Set a specific height for the banner */
 }
 
-.banner h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
+.banner h1,
+.banner h2 {
+    margin: 5px 0;
+    font-size: 1.5em;
 }
 
 .banner p {
@@ -80,23 +91,26 @@ header nav ul li a:hover {
     margin-bottom: 30px;
 }
 
-.canle{
+.canle {
     padding-top: 30px;
     padding-bottom: 120px;
 }
 
 .product-item {
     float: left;
-    width: 33.33%; /* Hiển thị 3 sản phẩm trên 1 hàng trên desktop */
+    width: 33.33%;
+    /* Hiển thị 3 sản phẩm trên 1 hàng trên desktop */
     box-sizing: border-box;
     padding: 0 15px;
 }
 
 @media (max-width: 1024px) {
     .product-item {
-        width: 50%; /* Hiển thị 2 sản phẩm trên 1 hàng trên tablet */
+        width: 50%;
+        /* Hiển thị 2 sản phẩm trên 1 hàng trên tablet */
     }
-    .canle{
+
+    .canle {
         padding-top: 200px;
         padding-bottom: 463px;
     }
@@ -104,10 +118,19 @@ header nav ul li a:hover {
 
 @media (max-width: 600px) {
     .product-item {
-        width: 100%; /* Hiển thị 1 sản phẩm trên 1 hàng trên mobile */
+        width: 100%;
+        /* Hiển thị 1 sản phẩm trên 1 hàng trên mobile */
+    }
+
+}
+@media only screen and (max-width: 768px) {
+    .banner {
+        display: none; /* Ẩn banner trên màn hình có chiều rộng nhỏ hơn hoặc bằng 768px */
+    }
+    .product-list{
+        margin-top: 20px;
     }
 }
-
 
 .products {
     padding: 50px 0;
@@ -117,16 +140,20 @@ header nav ul li a:hover {
     text-align: center;
     margin-bottom: 30px;
     padding-top: 10px;
+    max-height: max-content
 }
 
 .product-item img {
-    width: 370px;
-    height: 420px;   
+    width: 400px;
+    height: 320px;
     border-radius: 8px;
     overflow-x: hidden
-}/*
+}
 
-*/.product-item h2 {
+/*
+
+*/
+.product-item h2 {
     margin: 10px 0;
 }
 
@@ -151,15 +178,15 @@ header nav ul li a:hover {
 
 
 footer {
-    background-color: #47464d;
+    background-color: #F8680C;
     color: #f6f6f6;
     padding: 30px 0;
     text-align: center;
-    
+
 }
 
 footer .logo img {
-    max-width: 150px;
+    max-width: 350px;
 }
 
 footer nav ul {
@@ -183,7 +210,7 @@ footer nav ul li a:hover {
 }
 
 
-.sp{
+.sp {
     max-width: 30%;
     max-height: 30%;
 }
