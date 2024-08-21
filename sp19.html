@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TADA MECHANICAL</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .product-info {
+            width: 100%;
+            /* Tăng chiều rộng lên 90% */
+            /* height: 200vh; */
+            /* Chiều cao giữ nguyên */
+            padding: 40px 40px;
+            /* Tăng padding để tạo thêm khoảng trống ở hai bên */
+            margin: 0 auto;
+            /* Căn giữa phần tử */
+            margin-top: -23px;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        .product-details {
+            margin-bottom: 20px;
+
+        }
+
+        .product-details ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .product-details li {
+            margin-bottom: 10px;
+        }
+
+        .btnSP {
+            display: block;
+            width: 100%;
+            padding: 10px 20px;
+
+        }
+
+        .SP {
+            display: flex;
+            max-width: 1200px;
+            height: 600px;
+            margin: 60px auto;
+            background-color: #fff;
+            border: 3px solid #fb742d;
+            border-radius: 5px;
+            flex-direction: row;
+            align-items: flex-start;
+        }
+
+        .image-slider {
+            width: 50%;
+            overflow-x: auto;
+            white-space: nowrap;
+            padding-top: 25px;
+        }
+
+        .image-slider img {
+            max-width: 100%;
+            height: auto;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .gallery-container {
+            width: 80%;
+            margin: auto;
+        }
+
+        .main-image {
+            width: 100%;
+            display: block;
+            padding-left: 10px;
+        }
+
+        .thumbnail-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .thumbnail {
+            width: 60px;
+            margin: 0 5px;
+            cursor: pointer;
+            opacity: 0.6;
+        }
+
+        .thumbnail:hover {
+            opacity: 1;
+        }
+
+        /* Mobile view */
+        @media (max-width: 768px) {
+            .SP {
+                flex-direction: column;
+                /* Stack elements vertically */
+                margin-bottom: 50px;
+            }
+
+            .image-slider {
+                width: 100%;
+
+                /* Make the image-slider full width */
+                padding-right: 6px;
+
+                height: 1200%;
+                overflow-y: hidden;
+
+                /* Add some space below the image-slider */
+            }
+
+            .product-info {
+                width: 100%;
+                /* Make the product-info full width */
+                padding-left: 10;
+                /* Remove the left padding */
+                height: 200%;
+
+            }
+
+            .thumbnail-container {
+                display: flex;
+                justify-content: center;
+                /* Center thumbnails */
+                flex-wrap: wrap;
+            }
+
+            .thumbnail {
+                margin: 5px;
+                width: 60px;
+                /* Adjust thumbnail size for mobile view */
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="#"><img src="img/logo/TADA-logo/default.png" alt="Logo"></a>
+            </div>
+            <nav>
+                <ul class="headertitle">
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="#">Sản phẩm</a></li>
+                    <li><a href="#">Dịch vụ</a></li>
+                    <li><a href="#">Tin tức</a></li>
+                    <li><a href="aboutus.html">Liên hệ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Banner -->
+    <section class="banner">
+        <div class="container">
+            <h1>Chào mừng đến với cửa hàng của chúng tôi</h1>
+            <p>Chúng tôi cung cấp những sản phẩm chất lượng, đa dạng và uy tín.</p>
+            <a href="index.html" class="btn btn-primary">Xem sản phẩm</a>
+        </div>
+    </section>
+
+    <div class="SP">
+        <div class="image-slider">
+            <img id="mainImage" class="main-image" src="img/motor/Motor-cua-cuon-YH500.png" alt="Hình Chính">
+            <div class="thumbnail-container">
+                <img class="thumbnail" src="img/motor/Motor-cua-cuon-YH500.png" alt="Hình 1" onclick="changeImage(this)">
+                <img class="thumbnail" src="img/motor/subYH500-1.jpg" alt="Hình 2" onclick="changeImage(this)">
+                <img class="thumbnail" src="img/motor/subYH500-2.jpg" alt="Hình 2" onclick="changeImage(this)">
+            </div>
+        </div>
+
+
+        <div class="product-info">
+            <h1 style="text-align: center;">MOTOR CỬA CUỐN YH 500KG LIÊN DOANH</h1>
+            <ul>1. Mô tả sản phẩm</ul>
+                <li> Motor – Bộ tời cửa cuốn YH-500 là thương hiệu uy tín trên thị trường, thiết kế đột phá với công nghệ động cơ cảm biến điện từ 220 Vac-50Hz hiệu suất cao với sức nâng tới 500Kg.</li>
+                <li>Sản phẩm được thiết kế và sản xuất với công nghệ từ Đài Loan, vật liệu được nhiệt đới hoá để phù hợp với điều kiện khí hậu ở Việt Nam.</li>
+                <li>Đóng mở cửa cuốn một cách dễ dàng, an toàn và chính xác mà không cần phải dùng tới sức người, tất cả các thao tác đó chỉ cần một nút bấm.</li>
+                <li>Motor – Bộ tời cửa cuốn YH-500 thích hợp lắp đặt cho hầu hết các loại cửa cuốn dân dụng và công nghiệp: nhà ở, cửa hàng, cửa garage, nhà xưởng, mái bạt,….</li> 
+                
+            <ul>2. Thông số kỹ thuật:</ul>
+                    <li>Thương hiệu: YH</li>
+                    <li>Điện áp: 220V AC</li>
+                    <li>Tần số: 50/60hz</li>
+                    <li> Công suất: 1/2 HP</li>
+                    <li>Dòng điện: 3.5A</li>
+                    <li>Lực tải: 500kg</li>
+                    <li>Trọng lượng: 10kg</li>
+                    <li>Giới hạn hành trình: 6m</li>
+            <ul>3. Tính năng của motor</ul>  
+                    <li>Hệ thống phanh với cơ cấu hút chủ động chống tuột cửa, má phanh bổ sung sợi kevlar chống cháy.</li>
+                    <li>Hộp số được làm bằng thép siêu bền từ Đài Loan.</li>
+                    <li>Động cơ điện 220 Vac hoạt động mạnh mẽ – êm ái – bền bỉ.</li>
+                    <li>Trang bị nút bấm tường có dây với các lệnh: Lên – dừng – xuống.</li>
+                    <li>Trang bị xích kéo tay phòng trường hợp đóng – mở cửa khi mất điện.</li>
+                    <li>Hệ thống rờ le điều khiển động lực đóng ngắt mạnh mẽ và an toàn.</li>
+                    <li>Hệ thống rờ le hành trình ngắt chính xác khi cửa đóng hoặc mở hết.</li>
+                 
+                    <br>
+            <a href="aboutus.html" class="btn btn-primary">MUA NGAY</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <!-- <div class="footer">
+            <div class="footer-content">
+                <div class="logo">
+                    <a href="#"><img src="img/logo.png" alt="Logo"></a>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Trang chủ</a></li>
+                        <li><a href="#">Sản phẩm</a></li>
+                        <li><a href="#">Dịch vụ</a></li>
+                        <li><a href="#">Tin tức</a></li>
+                        <li><a href="aboutus.html">Liên hệ</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div> -->
+        <div class="logo">
+            <a href="#"><img src="img/logo/TADA-logo/cover.png" alt="Logo"></a>
+        </div>
+    </footer>
+
+    <script>
+        function changeImage(element) {
+            var mainImage = document.getElementById("mainImage");
+            mainImage.src = element.src;
+        }
+    </script>
+</body>
+
+</html>

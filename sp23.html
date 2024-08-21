@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TADA MECHANICAL</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .product-info {
+            width: 100%;
+            /* Tăng chiều rộng lên 90% */
+            /* height: 200vh; */
+            /* Chiều cao giữ nguyên */
+            padding: 40px 40px;
+            /* Tăng padding để tạo thêm khoảng trống ở hai bên */
+            margin: 0 auto;
+            /* Căn giữa phần tử */
+            margin-top: -23px;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        .product-details {
+            margin-bottom: 20px;
+
+        }
+
+        .product-details ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .product-details li {
+            margin-bottom: 10px;
+        }
+
+        .btnSP {
+            display: block;
+            width: 100%;
+            padding: 10px 20px;
+
+        }
+
+        .SP {
+            display: flex;
+            max-width: 1200px;
+            height: 600px;
+            margin: 60px auto;
+            background-color: #fff;
+            border: 3px solid #fb742d;
+            border-radius: 5px;
+            flex-direction: row;
+            align-items: flex-start;
+        }
+
+        .image-slider {
+            width: 50%;
+            overflow-x: auto;
+            white-space: nowrap;
+            padding-top: 25px;
+        }
+
+        .image-slider img {
+            max-width: 100%;
+            height: auto;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .gallery-container {
+            width: 80%;
+            margin: auto;
+        }
+
+        .main-image {
+            width: 100%;
+            display: block;
+            padding-left: 10px;
+        }
+
+        .thumbnail-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .thumbnail {
+            width: 60px;
+            margin: 0 5px;
+            cursor: pointer;
+            opacity: 0.6;
+        }
+
+        .thumbnail:hover {
+            opacity: 1;
+        }
+
+        /* Mobile view */
+        @media (max-width: 768px) {
+            .SP {
+                flex-direction: column;
+                /* Stack elements vertically */
+                margin-bottom: 50px;
+            }
+
+            .image-slider {
+                width: 100%;
+
+                /* Make the image-slider full width */
+                padding-right: 6px;
+
+                height: 1200%;
+                overflow-y: hidden;
+
+                /* Add some space below the image-slider */
+            }
+
+            .product-info {
+                width: 100%;
+                /* Make the product-info full width */
+                padding-left: 10;
+                /* Remove the left padding */
+                height: 200%;
+
+            }
+
+            .thumbnail-container {
+                display: flex;
+                justify-content: center;
+                /* Center thumbnails */
+                flex-wrap: wrap;
+            }
+
+            .thumbnail {
+                margin: 5px;
+                width: 60px;
+                /* Adjust thumbnail size for mobile view */
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="#"><img src="img/logo/TADA-logo/default.png" alt="Logo"></a>
+            </div>
+            <nav>
+                <ul class="headertitle">
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="#">Sản phẩm</a></li>
+                    <li><a href="#">Dịch vụ</a></li>
+                    <li><a href="#">Tin tức</a></li>
+                    <li><a href="aboutus.html">Liên hệ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Banner -->
+    <section class="banner">
+        <div class="container">
+            <h1>Chào mừng đến với cửa hàng của chúng tôi</h1>
+            <p>Chúng tôi cung cấp những sản phẩm chất lượng, đa dạng và uy tín.</p>
+            <a href="index.html" class="btn btn-primary">Xem sản phẩm</a>
+        </div>
+    </section>
+
+    <div class="SP">
+        <div class="image-slider">
+            <img id="mainImage" class="main-image" src="img/motor/Motor-cua-cuon-JG500.png" alt="Hình Chính">
+            <div class="thumbnail-container">
+                <img class="thumbnail" src="img/motor/Motor-cua-cuon-JG500.png" alt="Hình 1"
+                    onclick="changeImage(this)">
+                <img class="thumbnail" src="img/motor/subJG500-1.png" alt="Hình 2" onclick="changeImage(this)">
+                <img class="thumbnail" src="img/motor/subJG500-2.png" alt="Hình 2" onclick="changeImage(this)">
+            </div>
+        </div>
+
+
+        <div class="product-info">
+            <h1 style="text-align: center;">MOTOR CỬA CUỐN JG 500 KG</h1>
+            <p>Cửa cuốn hiện nay đang rất thịnh hành, được nhiều người sử dụng để bảo vệ an toàn cho ngôi nhà và mọi
+                người trong gia đình. Dòng cửa cuốn sử dụng moteur lại được nhiều người quan tâm hơn cửa cuốn đẩy tay
+                bởi các ưu điểm tiện dụng và an toàn cao mà nó mang lại.</p>
+            <br>
+            <p>Moteur cửa cuốn có rất nhiều loại, nhiều hãng sản xuất, trong đó loại moteur cửa cuốn JG 500kg là 1 trong
+                những loại đạt tiêu chuẩn về độ bền và sử dụng trong và ngoài nước.</p>
+            <br>
+            <p>Là loại moteur có thể nâng vượt tải trọng, dùng cho loại cửa cuốn có diện tích < 20m2, thích hợp lắp đặt
+                    cho các công trình như nhà ở, biệt thự, ngân hàng, cửa hàng, công ty, siêu thị,… Mặc dù dòng Moteur
+                    cửa cuốn JG 500 là hàng liên doanh Đài Loan nhưng lại sử dụng dây đồng, chất lượng tốt, cơ chế vận
+                    hành ổn định, độ bền cao nên giá thành cao hơn các loại motor sử dụng dây nhôm. Với tính năng không
+                    kén cửa nên Moteur JG được nhiều khách hàng quan tâm là chọn lựa.</p>
+                    <br>
+                    <ul>Đánh giá Moteur cửa cuốn JG</ul>
+                        <li>Là dòng motor rất khỏe, moteur dây đồng, khởi động mạnh, có thể kéo vượt tải trọng, hiện đang rất được phổ biến trên thị trường</li>
+                        <li>Moteur cửa cuốn JG 500kg là loại motor lắp ngoài nên dễ lắp đặt, bảo trì, có độ bền cao, rất dễ để tìm ra hư hỏng hoặc khi cửa cuốn bị vấn đề để sửa chữa, bảo hành</li>
+                        <li> Moteur cửa cuốn được đồng bộ hóa hoạt động với điều khiển remote cửa cuốn, nút bấm tay cửa cuốn. Ngoài ra mô tơ cửa cuốn có thể tích hợp với các phụ kiện như thiết bị cảm biến tự dừng đảo chiều cửa cuốn khi gặp vật cản, UPS lưu trữ điện để sử dụng cửa cuốn khi mất điện, các loại chuông báo chống cháy, chống trộm,…</li>
+                        <li>Với công nghệ tiên tiến nên việc bảo mật được nâng cao tối đa, chống sao chép copy mã khóa, dữ liệu đồng bộ nên độ an toàn của moteur JG được đánh giá rất cao.</li>
+                        <li>Sử dụng dây đồng nên moteur cửa cuốn JG có chất lượng tốt, vận hành ổn định, sử dụng lâu dài mà vẫn bền bỉ. </li>
+                    <br>
+                    <a href="aboutus.html" class="btn btn-primary">MUA NGAY</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <!-- <div class="footer">
+            <div class="footer-content">
+                <div class="logo">
+                    <a href="#"><img src="img/logo.png" alt="Logo"></a>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Trang chủ</a></li>
+                        <li><a href="#">Sản phẩm</a></li>
+                        <li><a href="#">Dịch vụ</a></li>
+                        <li><a href="#">Tin tức</a></li>
+                        <li><a href="aboutus.html">Liên hệ</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div> -->
+        <div class="logo">
+            <a href="#"><img src="img/logo/TADA-logo/cover.png" alt="Logo"></a>
+        </div>
+    </footer>
+
+    <script>
+        function changeImage(element) {
+            var mainImage = document.getElementById("mainImage");
+            mainImage.src = element.src;
+        }
+    </script>
+</body>
+
+</html>

@@ -6,6 +6,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TADA MECHANICAL</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+
+        /* Navigation styling */
+        .menu {
+            background-color: #333;
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .menu ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+
+        .menu ul li {
+            margin: 0 10px;
+        }
+
+        .menu ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 15px;
+            display: block;
+            transition: background-color 0.3s ease;
+        }
+
+        .menu ul li a:hover {
+            background-color: #555;
+            border-radius: 4px;
+        }
+
+        /* Section styling */
+        section {
+            padding: 60px 20px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        section h2 {
+            margin-bottom: 15px;
+        }
+
+        /* Responsive styling */
+        @media (max-width: 768px) {
+            .menu ul {
+                flex-direction: column;
+            }
+
+            .menu ul li {
+                margin: 5px 0;
+                text-align: center;
+            }
+            .listProduct{
+                text-align: center;
+            }
+
+            section {
+                padding: 40px 15px;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -46,6 +110,18 @@
         </div>
     </div>
 
+
+    <nav class="menu">
+        <h1 class="listProduct" style="color: gold; padding-left: 20px; padding-top: 10px;">Danh sách sản phẩm</h1>
+        <ul>
+            <li><a href="#muc1">CỬA CUỐN ĐỨC</a></li>
+            <li><a href="#muc2">CỬA CUỐN ĐÀI LOAN</a></li>
+            <li><a href="#muc3">CỬA CUỐN CÔNG NGHỆ ÚC</a></li>
+            <li><a href="#muc4">MOTOR CỬA CUỐN</a></li>
+        </ul>
+    </nav>
+
+    <section id="muc1">
     <!-- Sản phẩm -->
     <div class="product-list">
 
@@ -114,7 +190,8 @@
 
 
     </div>
-
+</section>
+<section id="muc2">
     <div class="product-list">
         <h1 style="color: red; text-decoration: solid; padding-left: 30px; padding-top: 30px;">CỬA CUỐN ĐÀI LOAN</h1>
         <!-- Sản phẩm 1 -->
@@ -158,7 +235,8 @@
 
 
     </div>
-
+</section>
+<section id="muc3">
     <div class="product-list">
         <h1 style="color: red; text-decoration: solid; padding-left: 30px; padding-top: 30px;">CỬA CUỐN CÔNG NGHỆ ÚC
         </h1>
@@ -196,12 +274,67 @@
 
         <!-- Sản phẩm 2 -->
         <div class="product-item">
-            <img src="img/cuonUc/Cua-cuon-Uc-Aluswin.jpg"alt=Product 2">
+            <img src="img/cuonUc/Cua-cuon-Uc-Aluswin.jpg" alt=Product 2">
             <h2>CỬA CUỐN ÚC – ALUSWIN</h2>
             <h2 style="color: yellow;">★★★★★</h2>
             <a href="sp18.html" class="btn btn-secondary">Mua ngay</a>
         </div>
     </div>
+</section>
+
+<section id="muc4">
+    <div class="product-list">
+        <h1 style="color: red; text-decoration: solid; padding-left: 30px; padding-top: 30px;">MOTOR CỬA CUỐN
+        </h1>
+        <!-- Sản phẩm 1 -->
+        <div class="product-item">
+            <img src="img/motor/Motor-cua-cuon-YH500.png" alt="Product 1">
+            <h2>MOTOR CỬA CUỐN YH 500KG LIÊN DOANH</h2>
+            <h2 style="color: yellow;">★★★★★</h2>
+            <a href="sp19.html" class="btn btn-secondary">Mua ngay</a>
+        </div>
+
+        <!-- Sản phẩm 2 -->
+        <div class="product-item">
+            <img src="img/motor/Motor-cua-cuon-yh300.png" alt="Product 1">
+            <h2>MOTOR CỬA CUỐN YH 300KG LIÊN DOANH</h2>
+            <h2 style="color: yellow;">★★★★★</h2>
+            <a href="sp20.html" class="btn btn-secondary">Mua ngay</a>
+        </div>
+
+        <!-- Sản phẩm 3 -->
+        <div class="product-item">
+            <img src="img/motor/Motor-cua-cuon-HL400.jpg"alt="Product 1">
+            <h2>MOTOR CỬA CUỐN HL 400KG</h2>
+            <h2 style="color: yellow;">★★★★★</h2>
+            <a href="sp21.html" class="btn btn-secondary">Mua ngay</a>
+        </div>
+
+        <!-- Sản phẩm 1 -->
+        <div class="product-item">
+            <img src="img/motor/Motor-cua-cuon-HL400.jpg" alt="Product 1">
+            <h2>MOTOR CỬA CUỐN HL 600KG</h2>
+            <h2 style="color: yellow;">★★★★★</h2>
+            <a href="sp22.html" class="btn btn-secondary">Mua ngay</a>
+        </div>
+
+        <!-- Sản phẩm 2 -->
+        <div class="product-item">
+            <img src="img/motor/Motor-cua-cuon-JG500.png" alt=Product 2">
+            <h2>MOTOR CỬA CUỐN JG 500 KG</h2>
+            <h2 style="color: yellow;">★★★★★</h2>
+            <a href="sp23.html" class="btn btn-secondary">Mua ngay</a>
+        </div>
+
+        <!-- Sản phẩm 3 -->
+        <div class="product-item">
+            <img src="img/motor/Motor-cua-cuon-JG300.jpg" alt=Product 2">
+            <h2>MOTOR CỬA CUỐN JG 300 KG</h2>
+            <h2 style="color: yellow;">★★★★★</h2>
+            <a href="sp23.html" class="btn btn-secondary">Mua ngay</a>
+        </div>
+    </div>
+</section>
 
 
     <!-- Footer -->
@@ -226,7 +359,16 @@
             <a href="#"><img src="img/logo/TADA-logo-slogan/cover.png" alt="Logo"></a>
         </div>
     </footer>
-
+    <script>
+        document.querySelectorAll('nav ul li a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>
