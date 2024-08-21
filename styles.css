@@ -40,7 +40,8 @@ header .container {
 }
 
 header .logo img {
-    max-width: 80px;
+    max-width: 60px;
+    
 }
 
 header nav ul {
@@ -128,7 +129,6 @@ header nav ul li a:hover {
         top: 0.2cm;
         
     }
-
 }
 @media only screen and (max-width: 768px) {
     .banner {
