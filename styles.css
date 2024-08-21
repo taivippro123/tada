@@ -118,8 +118,15 @@ header nav ul li a:hover {
 
 @media (max-width: 600px) {
     .product-item {
-        width: 100%;
+        width: 95%;
         /* Hiển thị 1 sản phẩm trên 1 hàng trên mobile */
+    }
+    header .logo img {
+        max-width: 50px;
+        position: absolute;
+        left: 0; /* Di chuyển hình ảnh sát bên trái container */
+        top: 0.2cm;
+        
     }
 
 }
