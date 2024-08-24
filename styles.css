@@ -108,7 +108,7 @@ header nav ul li a:hover {
 
 @media (max-width: 1024px) {
     .product-item {
-        width: 50%;
+        width:48%;
         /* Hiển thị 2 sản phẩm trên 1 hàng trên tablet */
     }
 
