@@ -100,7 +100,7 @@ header nav ul li a:hover {
 
 .product-item {
     float: left;
-    width: 33.33%;
+    width: 32%;
     /* Hiển thị 3 sản phẩm trên 1 hàng trên desktop */
     box-sizing: border-box;
     padding: 0 15px;
@@ -148,7 +148,11 @@ header nav ul li a:hover {
     text-align: center;
     margin-bottom: 30px;
     padding-top: 10px;
-    max-height: max-content
+    max-height: max-content;
+    border: 1px solid #666; /* Đặt viền dày 2px và màu đen */
+    padding: 10px; /* Thêm khoảng cách giữa viền và nội dung bên trong */
+    border-radius: 5px; /* Làm tròn các góc của viền */
+    margin: 5px;
 }
 
 .product-item img {
